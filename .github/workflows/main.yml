@@ -19,6 +19,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run:
           aws s3 cp --region ap-northeast-1 ./index.html s3://gorilla-webpage/;
-          aws s3 cp --recursive --region ap-northeast-1 ./css s3://gorilla-webpage/;
-          aws s3 cp --recursive --region ap-northeast-1 ./js s3://gorilla-webpage/;
-          aws s3 cp --recursive --region ap-northeast-1 ./assets s3://gorilla-webpage/;
+          aws s3 cp --recursive --region ap-northeast-1 ./css s3://gorilla-webpage/css/;
+          aws s3 cp --recursive --region ap-northeast-1 ./js s3://gorilla-webpage/js/;
+          aws s3 cp --recursive --region ap-northeast-1 ./assets s3://gorilla-webpage/assets/;
