@@ -9,3 +9,17 @@ Resources:
         gorilla-webpage
       WebsiteConfiguration: 
         IndexDocument: index.html
+  s3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref s3Bucket
+      PolicyDocument: 
+        Version: 2012-10-17
+        Statement:
+          - Action:
+              - 's3:GetObject'
+            Effect: Allow
+            Resource:
+              - !GetAtt s3Bucket.Arn
+              - !Join [ "/", [ !GetAtt s3Bucket.Arn, "*" ] ] 
+            Principal: '*'
