@@ -11431,6 +11431,9 @@ html {
 
 .masthead {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .masthead .masthead-heading {
   font-size: 6rem;
