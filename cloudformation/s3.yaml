@@ -6,7 +6,7 @@ Resources:
     Properties: 
       AccessControl: PublicRead
       BucketName: 
-        gorilla-webpage
+        www.komabagorilla.com
       WebsiteConfiguration: 
         IndexDocument: index.html
   s3BucketPolicy:
