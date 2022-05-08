@@ -18,7 +18,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run:
-          aws s3 cp --region ap-northeast-1 ./index.html s3://www.komabagorilla.com/;
-          aws s3 cp --recursive --region ap-northeast-1 ./css s3://www.komabagorilla.com/css/;
-          aws s3 cp --recursive --region ap-northeast-1 ./js s3://www.komabagorilla.com/js/;
-          aws s3 cp --recursive --region ap-northeast-1 ./assets s3://www.komabagorilla.com/assets/;
+          aws s3 cp --region ap-northeast-1 ./index.html s3://komabagorilla.com/;
+          aws s3 cp --recursive --region ap-northeast-1 ./css s3://komabagorilla.com/css/;
+          aws s3 cp --recursive --region ap-northeast-1 ./js s3://komabagorilla.com/js/;
+          aws s3 cp --recursive --region ap-northeast-1 ./assets s3://komabagorilla.com/assets/;
