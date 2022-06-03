@@ -22,4 +22,3 @@ jobs:
           aws s3 cp --recursive --region ap-northeast-1 ./css s3://komabagorilla.com/css/;
           aws s3 cp --recursive --region ap-northeast-1 ./js s3://komabagorilla.com/js/;
           aws s3 cp --recursive --region ap-northeast-1 ./assets s3://komabagorilla.com/assets/;
-          aws cloudfront create-invalidation --distribution-id E35OGRQKOW5NXU --paths "/*";
