@@ -608,6 +608,12 @@ progress {
   max-height: 50vh;
 }
 
+.history-modal .img-fluid {
+  max-width: 80%;
+  max-height: 75vh;
+}
+
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
