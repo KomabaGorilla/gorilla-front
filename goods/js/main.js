@@ -87,7 +87,7 @@ $(function() {
 
 $(window).on('load resize',function(){
     //ウィンドウの高さを取得する
-    var targetY = window.innerHeight;
+    var targetY = document.documentElement.clientHeight;
     
     //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
     $('.top-scroll a').on('click',function(){
