@@ -83,5 +83,28 @@ $(function() {
         carousel_nav_a_3.removeClass('active');
         $(".stationery-nav a[data-num="+event.item.index+"]").addClass('active');
     })
-
 })
+
+$(window).on('load resize',function(){
+    //ウィンドウの高さを取得する
+    var targetY = $(window).height();
+    
+    //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
+    $('.top-scroll a').on('click',function(){
+        $("html, body").stop().animate({scrollTop: 0}, 500, 'swing');
+        return false;
+    });
+    //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
+    $('.tshirt-scroll a').on('click',function(){
+      $("html, body").stop().animate({scrollTop: targetY}, 500, 'swing');
+      return false;
+    });
+    $('.towel-scroll a').on('click',function(){
+        $("html, body").stop().animate({scrollTop: targetY * 2}, 500, 'swing');
+        return false;
+      });
+    $('.stationery-scroll a').on('click',function(){
+    $("html, body").stop().animate({scrollTop: targetY * 3}, 500, 'swing');
+    return false;
+    });
+});
