@@ -136,8 +136,7 @@ h2 {
 	font-size: 25px;
 }
 
-.owl-1 {
-
+.owl {
 	.owl-nav {
 		width: 100%;
 		position: absolute;
@@ -202,6 +201,10 @@ h2 {
 		// 	flex: 0 0 100%;
 		// 	display: block;
 		// }
+	}
+	img {
+		object-fit: contain;
+		max-height: 45vh;
 	}
 	.text {
 		padding: 50px;
