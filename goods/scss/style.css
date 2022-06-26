@@ -216,7 +216,7 @@ h2 {
 .media-29101 img {
   -o-object-fit: contain;
      object-fit: contain;
-  max-height: 45vh;
+  max-height: 40vh;
 }
 .media-29101 .text {
   padding: 50px;
@@ -247,11 +247,10 @@ h2 {
 .carousel-nav {
   width: 100%;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 40px;
 }
 .carousel-nav a {
   color: #999;
-  padding: 20px;
+  padding: 10px 0 0;
   text-align: center;
   display: inline-block;
 }

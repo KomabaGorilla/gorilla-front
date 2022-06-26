@@ -204,7 +204,7 @@ h2 {
 	}
 	img {
 		object-fit: contain;
-		max-height: 45vh;
+		max-height: 40vh;
 	}
 	.text {
 		padding: 50px;
@@ -234,10 +234,9 @@ h2 {
 .carousel-nav {
 	width: 100%;
 	border-bottom: 1px solid #ccc;
-	margin-bottom: 40px;
 	a {
 		color: #999;
-		padding: 20px;
+		padding: 10px 0 0;
 		text-align: center;
 		display: inline-block;
 		&:hover {
