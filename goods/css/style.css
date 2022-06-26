@@ -21,7 +21,7 @@ a, a:hover {
 }
 
 .scroll-box {
-  margin: 2vh 0;
+  margin: 3vh 0;
 }
 
 /*スクロールボタンの指定*/
@@ -34,11 +34,11 @@ a, a:hover {
 .scroll a {
   position: relative;
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #23272b;
   text-decoration: none;
-  padding: 0 0 40px;
+  padding: 0 0 30px;
   /*矢印を作成する*/
 }
 .scroll a:before {
@@ -90,11 +90,11 @@ a, a:hover {
 .top-scroll a {
   position: relative;
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #23272b;
   text-decoration: none;
-  padding: 0 0 40px;
+  padding: 10px 0 0;
   /*矢印を作成する*/
 }
 .top-scroll a:before {
@@ -104,7 +104,7 @@ a, a:hover {
   height: 10px;
   left: 0;
   right: 0;
-  bottom: 15px;
+  top: 0px;
   margin: auto;
   border-bottom: 2px solid #23272b;
   border-right: 2px solid #23272b;
