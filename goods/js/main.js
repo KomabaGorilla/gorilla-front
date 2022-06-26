@@ -86,15 +86,6 @@ $(function() {
 })
 
 $(window).on('load resize',function(){
-    const isIOS = /[ \(]iP/.test(navigator.userAgent)
-    //ウィンドウの高さを取得する
-    let targetY;
-    if (isIOS) {
-        targetY = screen.height
-    } else {
-        targetY = $(window).height();
-    }
-    
     //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
     $('.top-scroll a').on('click',function(){
         $("html, body").stop().animate({scrollTop: 0}, 500, 'swing');
@@ -102,15 +93,21 @@ $(window).on('load resize',function(){
     });
     //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
     $('.tshirt-scroll a').on('click',function(){
-      $("html, body").stop().animate({scrollTop: targetY}, 500, 'swing');
-      return false;
+        var clientRect = document.getElementById("tshirt").getBoundingClientRect() ;
+        let targetY = window.pageYOffset + clientRect.top;
+        $("html, body").stop().animate({scrollTop: targetY}, 500, 'swing');
+        return false;
     });
     $('.towel-scroll a').on('click',function(){
-        $("html, body").stop().animate({scrollTop: targetY * 2}, 500, 'swing');
+        var clientRect = document.getElementById("towel").getBoundingClientRect() ;
+        let targetY = window.pageYOffset + clientRect.top;
+        $("html, body").stop().animate({scrollTop: targetY}, 500, 'swing');
         return false;
-      });
+    });
     $('.stationery-scroll a').on('click',function(){
-    $("html, body").stop().animate({scrollTop: targetY * 3}, 500, 'swing');
-    return false;
+        var clientRect = document.getElementById("stationery").getBoundingClientRect() ;
+        let targetY = window.pageYOffset + clientRect.top;
+        $("html, body").stop().animate({scrollTop: targetY}, 500, 'swing');
+        return false;
     });
 });
