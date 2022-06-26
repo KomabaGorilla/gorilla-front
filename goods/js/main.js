@@ -86,8 +86,14 @@ $(function() {
 })
 
 $(window).on('load resize',function(){
+    const isIOS = /[ \(]iP/.test(navigator.userAgent)
     //ウィンドウの高さを取得する
-    var targetY = $(window).height();
+    let targetY;
+    if (isIOS) {
+        targetY = screen.height
+    } else {
+        targetY = $(window).height();
+    }
     
     //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
     $('.top-scroll a').on('click',function(){
