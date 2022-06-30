@@ -86,6 +86,7 @@ a, a:hover {
   bottom: 0;
   text-align: center;
   vertical-align: bottom;
+  margin-top: 15px;
 }
 .top-scroll a {
   position: relative;
