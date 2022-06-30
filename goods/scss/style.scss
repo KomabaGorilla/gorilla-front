@@ -217,6 +217,7 @@ h2 {
 	img {
 		object-fit: contain;
 		max-height: 40vh;
+		margin: 15px 0;
 		@include mq(lg) {
 			max-height: 75vh;
 		}
