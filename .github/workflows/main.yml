@@ -24,3 +24,4 @@ jobs:
           aws s3 cp --recursive --region ap-northeast-1 ./assets s3://komabagorilla.com/assets/;
           aws s3 cp --recursive --region ap-northeast-1 ./goods s3://komabagorilla.com/goods/;
           aws s3 cp --recursive --region ap-northeast-1 ./questionnaire s3://komabagorilla.com/questionnaire/;
+          aws s3 cp --recursive --region ap-northeast-1 ./error s3://komabagorilla.com/error/;
