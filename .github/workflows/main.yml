@@ -25,4 +25,12 @@ jobs:
           aws s3 cp --recursive --region ap-northeast-1 ./goods s3://komabagorilla.com/goods/;
           aws s3 cp --recursive --region ap-northeast-1 ./questionnaire s3://komabagorilla.com/questionnaire/;
           aws s3 cp --recursive --region ap-northeast-1 ./error s3://komabagorilla.com/error/;
-          aws cloudfront create-invalidation --distribution-id E35OGRQKOW5NXU --paths "/*"
+
+      - name: make invalidation to cloudfront
+        uses: chetan/invalidate-cloudfront-action@master
+        env:
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION_MAIN }}
+          PATHS: '/*'
+          AWS_REGION: 'ap-northeast-1'
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
