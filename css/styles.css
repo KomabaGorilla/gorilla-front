@@ -11533,6 +11533,6 @@ html {
 .twt_wrap {
   text-align: center;
 }
-.twt_wrap iframe {
+.twt_wrap .twitter-timeline {
   margin: auto;
 }
