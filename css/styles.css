@@ -11529,3 +11529,10 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.twt_wrap {
+  text-align: center;
+}
+.twt_wrap > iframe {
+  margin: auto;
+}
